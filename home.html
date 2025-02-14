@@ -1,29 +1,63 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>Home - Portfolio</title>
- <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+    <div class="main">
+        <div class="navbar">
+            <img src="images/logo.jpg" alt="Logo" class="logo-img">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="aboutme.html">About Me</a></li>
+                <li><a href="services.html">Services</a></li>
+            </ul>
+        </div>
+    </div>
 
- <div class="navbar">
- <div class="logo-container">
- <img src="images/logo.png" width="50" height="50" alt="Logo">
- <span class="logo">Portfolio</span>
- </div>
+    <div class="info" style="text-align: center;">
+        <h3>Hi, I'm Nandi</h3>
+        <h1>Web Designer</h1>
+        <h3>Welcome to my portfolio</h3>
+        <a href="https://www.linkedin.com/" class="hire-btn">Hire Me</a>
+    </div>
 
- <h1>Portfolio</h1>
+    <div class="image" style="text-align: center;">
+        <img src="images/guy.png" class="guy" width="700" height="500">
+    </div>
 
- <ul class="nav-links">
- <li><a href="home.html">Home</a></li>
- <li><a href="aboutme.html">About Me</a></li>
- <li><a href="services.html">Services</a></li>
- </ul>
- </div>
+    <div class="contact-form" style="text-align: center;">
+        <h2>Contact Me</h2>
+        <form action="mailto:email@domain.com">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+    
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Your Password" required>
+            <button type="submit">Submit</button>
+        </form>
+    
+        <div class="social-buttons">
+            <a href="https://www.linkedin.com/" target="_blank">
+                <img src="images/linkedin.png" class="social-icon" alt="LinkedIn">
+            </a>
+            <a href="https://www.youtube.com/" target="_blank">
+                <img src="images/youtube.png" class="social-icon" alt="YouTube">
+            </a>
+            <a href="https://www.twitter.com/" target="_blank">
+                <img src="images/twitter.png" class="social-icon" alt="Twitter">
+            </a>
+        </div>
+    </div>
+    
+
+    <div class="footer" style="text-align: center;">
+        &copy; 2025 My Portfolio. All rights reserved.
+    </div>
 
 </body>
 </html>

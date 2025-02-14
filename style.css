@@ -1,29 +1,239 @@
-.navbar {
-    list-style: none;
+* {
     margin: 0;
     padding: 0;
-    width: 60px;
 }
 
-li a{
-    display: block;
-    color: #000;
-    padding: 8px 16x;
-    text-decoration: none;
+body {
+    font-family: sans-serif;
+    background-color: #f8d7da;
+    color: #333;
 }
 
-li a:hover {
-    background-color: #555;
-    color: white;
+.main {
+    width: 100%;
+    background: url(pic/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: darkolivegreen;
+}
+
+.navbar .logo-img {
+    width: 100px;
 }
 
 ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 25%;
-    background-color: #f1f1f1;
-    height: 100%;
+    display: flex;
+    list-style: none;
+}
+
+ul li {
+    padding: 10px 16px;
+}
+
+ul li a {
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+ul li a:hover {
+    color: rgb(230, 104, 59);
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
     position: fixed;
-    overflow: auto;
+    width: 100%;
+    bottom: 0;
+}
+
+.info {
+    text-align: left;
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    transform: translateY(-50%);
+    width: 40%;
+}
+
+.image {
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+
+.contact-form {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 15%;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.contact-form input {
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact-form button {
+    padding: 10px;
+    font-size: 16px;
+    background-color: darkolivegreen;
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+
+.contact-form button:hover {
+    background-color: rgb(230, 104, 59);
+}
+
+.hire-btn {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: darkolivegreen;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+.hire-btn:hover {
+    background-color: rgb(230, 104, 59);
+}
+
+
+.skills {
+    text-align: center;
+    margin: 50px auto;
+}   
+
+.skill-card {
+    display: inline-block;
+    margin: 15px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(5, 17, 123);
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.skill-card h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.skill-card p {
+    font-size: 14px;
+    color: #555;
+}
+
+.skill-card:hover {
+    transform: translateY(-10px); 
+}
+
+.services {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 40px 20px;
+    background-color: #f4cccc;
+    gap: 30px;
+}
+
+.service-card {
+    background-color: #f9f9f9; 
+    padding: 20px;
+    width: 250px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-left: 5px solid #4CAF50; 
+}
+
+.service-card h3 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.service-card p {
+    font-size: 14px;
+    color: #555;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+    background-color: #e0f7fa;
+    border-left: 5px solid #0288d1;
+}
+
+@media (max-width: 768px) {
+    .services {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-card {
+        width: 90%;
+    }
+}
+
+.social-buttons a {
+    margin: 0 10px;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
 }
